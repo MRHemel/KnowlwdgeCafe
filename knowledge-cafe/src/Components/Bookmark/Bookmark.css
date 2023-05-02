@@ -1,0 +1,14 @@
+.right-side-content {
+    position: sticky;
+    top: 0;
+}
+
+.spent-time {
+    width: 90%;
+    height: 80px;
+    border-radius: 8px;
+    border: 2px solid #6047EC;
+    text-align: center;
+    margin-left: 5%;
+    background-color: rgba(96, 71, 236, 0.1);
+}

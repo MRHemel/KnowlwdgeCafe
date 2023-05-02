@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './Body.css'
 import Content from '../Content/Content';
+import Bookmark from '../Bookmark/Bookmark';
 
 const Body = () => {
     const [contents, setContents] = useState([])
@@ -21,7 +22,8 @@ const Body = () => {
 
             </div>
             <div className='side-content'>
-                <h6>side content</h6>
+
+                <Bookmark></Bookmark>
 
             </div>
 
