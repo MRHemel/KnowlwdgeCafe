@@ -3,8 +3,11 @@ import './Content.css'
 import bookmark from '../../assets/image/bookmark.svg'
 
 const Content = (props) => {
-    const { id, img, Author, BlogTitle, CoverImg, AuthorImg, ReadTime, PublishDate
+    const { Author, BlogTitle, CoverImg, AuthorImg, ReadTime, PublishDate
     } = props.content;
+    const time = props.time;
+    const handleBookmark = props.handleBookmark;
+
     return (
         <div className='content'>
             <img className='img-cover' src={CoverImg} alt="" />
@@ -17,15 +20,12 @@ const Content = (props) => {
                         <small>{PublishDate}</small>
                     </div>
                 </div>
-                <a href=''>
-                    <div className='bookmark'>
-                        <p>{ReadTime} min read</p>
-                        <img src={bookmark} alt="" />
-                    </div>
-                </a>
+
+                {/* <button onClick={() => handleBookmark(props.content)}>{ReadTime} min read <img src={bookmark} alt="" /></button> */}
+                <button >{ReadTime} min read <img src={bookmark} alt="" /></button>
             </div>
             <h2>{BlogTitle}</h2>
-            <p><a href="">Mark as read</a></p>
+            <button onClick={() => time(props.content)}>Mark as read</button>
             <hr />
 
 
