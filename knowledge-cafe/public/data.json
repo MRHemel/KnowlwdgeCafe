@@ -1,12 +1,12 @@
 [
     {
         "id": "1",
-        "Author-name": "Mr. Raju",
-        "Blog-title": "How to get your first job as a self-taught programmer",
-        "img": "http://placehold.it/32x32",
-        "Cover-img": "https://img.freepik.com/free-vector/learning-concept-illustration_114360-6186.jpg?w=740&t=st=1683015418~exp=1683016018~hmac=bf1de7c747e6e41b2117b30d2099c0b628aeb71b7e6dc2ff83cdae44b9b3071b",
-        "Author-img": "https://www.freepik.com/free-vector/businessman-character-avatar-isolated_6769264.htm#query=user&position=1&from_view=search&track=robertav1_2_sidr",
-        "Read-time": 5,
-        "Publish-date": "Mar 14 (4 Day ago)"
+        "Author": "Mr. Raju",
+        "BlogTitle": "How to get your first job as a self-taught programmer",
+        "img": "./vite.svg",
+        "CoverImg": "../src/assets/image/cover.jpg",
+        "AuthorImg": "../src/assets/image/author.jpg",
+        "ReadTime": 5,
+        "PublishDate": "Mar 14 (4 Days ago)"
     }
 ]
