@@ -17,10 +17,16 @@ const Content = (props) => {
                         <small>{PublishDate}</small>
                     </div>
                 </div>
-                <a><p>{ReadTime} min read</p><img src={bookmark} alt="" /></a>
+                <a href=''>
+                    <div className='bookmark'>
+                        <p>{ReadTime} min read</p>
+                        <img src={bookmark} alt="" />
+                    </div>
+                </a>
             </div>
             <h2>{BlogTitle}</h2>
             <p><a href="">Mark as read</a></p>
+            <hr />
 
 
         </div>

@@ -8,5 +8,35 @@
         "AuthorImg": "../src/assets/image/author.jpg",
         "ReadTime": 5,
         "PublishDate": "Mar 14 (4 Days ago)"
+    },
+    {
+        "id": "2",
+        "Author": "Mr. Raju",
+        "BlogTitle": "How to get your first job as a self-taught programmer",
+        "img": "./vite.svg",
+        "CoverImg": "../src/assets/image/cover.jpg",
+        "AuthorImg": "../src/assets/image/author.jpg",
+        "ReadTime": 5,
+        "PublishDate": "Mar 14 (4 Days ago)"
+    },
+    {
+        "id": "3",
+        "Author": "Mr. Raju",
+        "BlogTitle": "How to get your first job as a self-taught programmer",
+        "img": "./vite.svg",
+        "CoverImg": "../src/assets/image/cover.jpg",
+        "AuthorImg": "../src/assets/image/author.jpg",
+        "ReadTime": 5,
+        "PublishDate": "Mar 14 (4 Days ago)"
+    },
+    {
+        "id": "4",
+        "Author": "Mr. Raju",
+        "BlogTitle": "How to get your first job as a self-taught programmer",
+        "img": "./vite.svg",
+        "CoverImg": "../src/assets/image/cover.jpg",
+        "AuthorImg": "../src/assets/image/author.jpg",
+        "ReadTime": 5,
+        "PublishDate": "Mar 14 (4 Days ago)"
     }
 ]

@@ -32,6 +32,15 @@
 }
 
 a img {
-    width: 15px;
-    height: 18px;
+    width: 23px;
+    height: 30px;
+}
+
+a p {
+    display: inline;
+}
+
+.bookmark {
+    display: flex;
+    align-items: center;
 }
