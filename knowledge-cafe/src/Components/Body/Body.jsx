@@ -3,9 +3,12 @@ import './Body.css'
 import Content from '../Content/Content';
 import Bookmark from '../Bookmark/Bookmark';
 
+
 const Body = () => {
     const [contents, setContents] = useState([])
     const [time, setTime] = useState([]);
+    const [bookmark, setBookmark] = useState([])
+    const [title, setTitle] = useState([])
 
     // const [bookmark, setBookmark] = useState([])
 
@@ -19,6 +22,15 @@ const Body = () => {
         setTime(newTime);
 
     }
+    const handleBookmark = (product) => {
+
+        const newBookmark = [...bookmark, product];
+        setBookmark(newBookmark);
+        const newTitle = [...title, product.BlogTitle]
+        setTitle(newTitle)
+
+    }
+
 
 
     return (
@@ -30,13 +42,16 @@ const Body = () => {
                         key={content.id}
                         content={content}
                         handleTime={handleTime}
+                        handleBookmark={handleBookmark}
                     ></Content>)
                 }
 
             </div>
             <div className='side-content'>
 
-                <Bookmark time={time}></Bookmark>
+                <Bookmark time={time}
+                    bookmark={bookmark}
+                    title={title}></Bookmark>
 
             </div>
 

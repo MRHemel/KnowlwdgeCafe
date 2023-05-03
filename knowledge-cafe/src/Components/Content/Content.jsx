@@ -6,6 +6,7 @@ const Content = (props) => {
     const { Author, BlogTitle, CoverImg, AuthorImg, ReadTime, PublishDate
     } = props.content;
     const handleTime = props.handleTime;
+    const handleBookmark = props.handleBookmark;
 
     // const handleBookmark = props.handleBookmark;
 
@@ -23,7 +24,7 @@ const Content = (props) => {
                 </div>
 
                 {/* <button onClick={() => handleBookmark(props.content)}>{ReadTime} min read <img src={bookmark} alt="" /></button> */}
-                <button >{ReadTime} min read <img src={bookmark} alt="" /></button>
+                <button onClick={() => handleBookmark(props.content)}>{ReadTime} min read <img src={bookmark} alt="" /></button>
             </div>
             <h2>{BlogTitle}</h2>
             <button onClick={() => handleTime(props.content)}>Mark as read</button>

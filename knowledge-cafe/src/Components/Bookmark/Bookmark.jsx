@@ -1,7 +1,7 @@
 import React from 'react';
 import './Bookmark.css'
 
-const Bookmark = ({ time }) => {
+const Bookmark = ({ time, bookmark, title }) => {
     // console.log(time);
 
     let totalTime = 0;
@@ -16,7 +16,10 @@ const Bookmark = ({ time }) => {
 
             </div>
             <div className='bookmarked'>
-                <h4>Bookmarked Blogs : </h4>
+                <h4>Bookmarked Blogs :{bookmark.length} </h4>
+                {
+                    title.map(arr => <p>{arr}</p>)
+                }
 
             </div>
 
