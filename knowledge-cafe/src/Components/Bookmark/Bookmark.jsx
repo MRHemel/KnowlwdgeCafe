@@ -1,12 +1,18 @@
 import React from 'react';
 import './Bookmark.css'
 
-const Bookmark = (props) => {
+const Bookmark = ({ time }) => {
+    // console.log(time);
+
+    let totalTime = 0;
+    for (const Time of time) {
+        totalTime = totalTime + Time.ReadTime
+    }
 
     return (
         <div className='right-side-content'>
             <div className='spent-time'>
-                <h4>Spent time on read : {props.oldTime} min</h4>
+                <h4>Spent time on read :{totalTime} min</h4>
 
             </div>
             <div className='bookmarked'>

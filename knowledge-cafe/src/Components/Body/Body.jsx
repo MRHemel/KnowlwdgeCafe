@@ -5,6 +5,8 @@ import Bookmark from '../Bookmark/Bookmark';
 
 const Body = () => {
     const [contents, setContents] = useState([])
+    const [time, setTime] = useState([]);
+
     // const [bookmark, setBookmark] = useState([])
 
     useEffect(() => {
@@ -12,18 +14,13 @@ const Body = () => {
             .then(res => res.json())
             .then(data => setContents(data))
     }, [])
-    // const handleBookmark = (content) => {
-    //     const newBookmark = [...bookmark, content]
-    //     setBookmark(newBookmark)
-    // }
-    let oldTime = 10;
-    const time = (content) => {
-        // console.log(content.ReadTime)
-        oldTime = oldTime + content.ReadTime
-        console.log("now", oldTime)
-        return oldTime;
+    const handleTime = (readTime) => {
+        const newTime = [...time, readTime]
+        setTime(newTime);
 
     }
+
+
     return (
         <div className='body-content'>
             <div className='main-content'>
@@ -32,14 +29,14 @@ const Body = () => {
                     contents.map(content => <Content
                         key={content.id}
                         content={content}
-                        time={time}
+                        handleTime={handleTime}
                     ></Content>)
                 }
 
             </div>
             <div className='side-content'>
 
-                <Bookmark oldTime={oldTime}></Bookmark>
+                <Bookmark time={time}></Bookmark>
 
             </div>
 

@@ -5,8 +5,9 @@ import bookmark from '../../assets/image/bookmark.svg'
 const Content = (props) => {
     const { Author, BlogTitle, CoverImg, AuthorImg, ReadTime, PublishDate
     } = props.content;
-    const time = props.time;
-    const handleBookmark = props.handleBookmark;
+    const handleTime = props.handleTime;
+
+    // const handleBookmark = props.handleBookmark;
 
     return (
         <div className='content'>
@@ -25,7 +26,7 @@ const Content = (props) => {
                 <button >{ReadTime} min read <img src={bookmark} alt="" /></button>
             </div>
             <h2>{BlogTitle}</h2>
-            <button onClick={() => time(props.content)}>Mark as read</button>
+            <button onClick={() => handleTime(props.content)}>Mark as read</button>
             <hr />
 
 
