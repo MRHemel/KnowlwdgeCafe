@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import './Body.css'
 import Content from '../Content/Content';
 import Bookmark from '../Bookmark/Bookmark';
+import Question from '../Question/Question';
 
 
 const Body = () => {
@@ -54,6 +55,7 @@ const Body = () => {
                     title={title}></Bookmark>
 
             </div>
+            <Question></Question>
 
         </div>
     );
